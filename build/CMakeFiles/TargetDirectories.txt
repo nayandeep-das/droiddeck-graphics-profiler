@@ -1,0 +1,14 @@
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/frame_analyzer.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/statistics_tests.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/wayland_parser_test.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/wayland_log_parser_test.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/stutter_analyzer_tests.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/diagnostic_engine_tests.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/baseline_comparison_tests.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/correlation_analyzer_tests.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/hypothesis_engine_tests.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/recommendation_engine_tests.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/report_generator_tests.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/test.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/edit_cache.dir
+D:/Projects/droiddeck-graphics-profiler/build/CMakeFiles/rebuild_cache.dir

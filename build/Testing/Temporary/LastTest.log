@@ -1,0 +1,255 @@
+Start testing: Nov 03 01:39 India Standard Time
+----------------------------------------------------------
+1/10 Testing: StatisticsTests
+1/10 Test: StatisticsTests
+Command: "D:/Projects/droiddeck-graphics-profiler/build/statistics_tests.exe"
+Directory: D:/Projects/droiddeck-graphics-profiler/build
+"StatisticsTests" start time: Nov 03 01:39 India Standard Time
+Output:
+----------------------------------------------------------
+PASS: Basic statistics test
+PASS: Empty input test
+PASS: Invalid threshold test
+
+Failed tests: 0
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StatisticsTests" end time: Nov 03 01:39 India Standard Time
+"StatisticsTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/10 Testing: WaylandParserTest
+2/10 Test: WaylandParserTest
+Command: "D:/Projects/droiddeck-graphics-profiler/build/wayland_parser_test.exe"
+Directory: D:/Projects/droiddeck-graphics-profiler
+"WaylandParserTest" start time: Nov 03 01:39 India Standard Time
+Output:
+----------------------------------------------------------
+Samples loaded: 88
+
+Timing data availability:
+Render-scene: 31
+Acquire: 31
+Present: 31
+Fence wait: 31
+Release: 31
+
+Timing verification for 23:15.6:
+Render-scene average: 4.14 ms
+Render-scene maximum: 10.41 ms
+
+Overall FPS range:
+Lowest: 0 at 37:45.9
+Highest: 40.1 at 23:15.6
+
+Eastward-active intervals at or below 5 FPS:
+Timestamp: 25:05.7 | FPS: 1.1 | Frames: 11 | GPU frames: 4
+Timestamp: 25:15.7 | FPS: 4.1 | Frames: 41 | GPU frames: 70
+Timestamp: 27:35.7 | FPS: 1 | Frames: 10 | GPU frames: 15
+
+Comparison group sizes:
+Low-FPS intervals (<= 5 FPS): 3
+Healthy-FPS intervals (>= 30 FPS): 49
+
+Timing comparison (milliseconds):
+Values are means across available 10-second aggregate observations, not per-frame timings.
+
+Render-scene average
+  Low FPS: N/A (0 samples)
+  Healthy FPS: 6.90 ms (20 samples)
+
+Render-scene maximum
+  Low FPS: N/A (0 samples)
+  Healthy FPS: 22.80 ms (20 samples)
+
+Acquire average
+  Low FPS: N/A (0 samples)
+  Healthy FPS: 0.19 ms (20 samples)
+
+Acquire maximum
+  Low FPS: N/A (0 samples)
+  Healthy FPS: 2.87 ms (20 samples)
+
+Present average
+  Low FPS: N/A (0 samples)
+  Healthy FPS: 1.35 ms (20 samples)
+
+Present maximum
+  Low FPS: N/A (0 samples)
+  Healthy FPS: 10.70 ms (20 samples)
+
+Fence-wait average
+  Low FPS: N/A (0 samples)
+  Healthy FPS: 4.54 ms (20 samples)
+
+Fence-wait maximum
+  Low FPS: N/A (0 samples)
+  Healthy FPS: 17.19 ms (20 samples)
+
+Release average
+  Low FPS: N/A (0 samples)
+  Healthy FPS: 14.16 ms (20 samples)
+
+Release maximum
+  Low FPS: N/A (0 samples)
+  Healthy FPS: 57.81 ms (20 samples)
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"WaylandParserTest" end time: Nov 03 01:39 India Standard Time
+"WaylandParserTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/10 Testing: WaylandLogParserTest
+3/10 Test: WaylandLogParserTest
+Command: "D:/Projects/droiddeck-graphics-profiler/build/wayland_log_parser_test.exe"
+Directory: D:/Projects/droiddeck-graphics-profiler
+"WaylandLogParserTest" start time: Nov 03 01:39 India Standard Time
+Output:
+----------------------------------------------------------
+All Wayland log parser tests passed.
+Validated samples: 88
+Surface lifecycle tests: PASSED
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"WaylandLogParserTest" end time: Nov 03 01:39 India Standard Time
+"WaylandLogParserTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/10 Testing: StutterAnalyzerTests
+4/10 Test: StutterAnalyzerTests
+Command: "D:/Projects/droiddeck-graphics-profiler/build/stutter_analyzer_tests.exe"
+Directory: D:/Projects/droiddeck-graphics-profiler
+"StutterAnalyzerTests" start time: Nov 03 01:39 India Standard Time
+Output:
+----------------------------------------------------------
+All stutter analyzer tests passed.
+Validated 14 test cases.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StutterAnalyzerTests" end time: Nov 03 01:39 India Standard Time
+"StutterAnalyzerTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/10 Testing: DiagnosticEngineTests
+5/10 Test: DiagnosticEngineTests
+Command: "D:/Projects/droiddeck-graphics-profiler/build/diagnostic_engine_tests.exe"
+Directory: D:/Projects/droiddeck-graphics-profiler
+"DiagnosticEngineTests" start time: Nov 03 01:39 India Standard Time
+Output:
+----------------------------------------------------------
+All 6 diagnostic engine tests passed.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DiagnosticEngineTests" end time: Nov 03 01:39 India Standard Time
+"DiagnosticEngineTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/10 Testing: BaselineComparisonTests
+6/10 Test: BaselineComparisonTests
+Command: "D:/Projects/droiddeck-graphics-profiler/build/baseline_comparison_tests.exe"
+Directory: D:/Projects/droiddeck-graphics-profiler
+"BaselineComparisonTests" start time: Nov 03 01:39 India Standard Time
+Output:
+----------------------------------------------------------
+All baseline comparison tests passed.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"BaselineComparisonTests" end time: Nov 03 01:39 India Standard Time
+"BaselineComparisonTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/10 Testing: CorrelationAnalyzerTests
+7/10 Test: CorrelationAnalyzerTests
+Command: "D:/Projects/droiddeck-graphics-profiler/build/correlation_analyzer_tests.exe"
+Directory: D:/Projects/droiddeck-graphics-profiler
+"CorrelationAnalyzerTests" start time: Nov 03 01:39 India Standard Time
+Output:
+----------------------------------------------------------
+All Correlation Analyzer tests passed.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"CorrelationAnalyzerTests" end time: Nov 03 01:39 India Standard Time
+"CorrelationAnalyzerTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/10 Testing: HypothesisEngineTests
+8/10 Test: HypothesisEngineTests
+Command: "D:/Projects/droiddeck-graphics-profiler/build/hypothesis_engine_tests.exe"
+Directory: D:/Projects/droiddeck-graphics-profiler
+"HypothesisEngineTests" start time: Nov 03 01:39 India Standard Time
+Output:
+----------------------------------------------------------
+All hypothesis engine tests passed.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"HypothesisEngineTests" end time: Nov 03 01:39 India Standard Time
+"HypothesisEngineTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/10 Testing: RecommendationEngineTests
+9/10 Test: RecommendationEngineTests
+Command: "D:/Projects/droiddeck-graphics-profiler/build/recommendation_engine_tests.exe"
+Directory: D:/Projects/droiddeck-graphics-profiler/build
+"RecommendationEngineTests" start time: Nov 03 01:39 India Standard Time
+Output:
+----------------------------------------------------------
+[PASS] Empty hypothesis analysis
+[PASS] Five hypothesis recommendations generated
+[PASS] All five hypothesis categories are covered
+[PASS] Recommendation content is complete
+[PASS] High-confidence priority assignment
+[PASS] Medium-confidence priority assignment
+[PASS] Low-confidence priority assignment
+[PASS] Priority string conversion
+
+All 8 recommendation engine tests passed.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RecommendationEngineTests" end time: Nov 03 01:39 India Standard Time
+"RecommendationEngineTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/10 Testing: ReportGeneratorTests
+10/10 Test: ReportGeneratorTests
+Command: "D:/Projects/droiddeck-graphics-profiler/build/report_generator_tests.exe"
+Directory: D:/Projects/droiddeck-graphics-profiler/build
+"ReportGeneratorTests" start time: Nov 03 01:39 India Standard Time
+Output:
+----------------------------------------------------------
+[PASS] Empty output path handling
+[PASS] Empty analysis report generation
+[PASS] Automatic directory creation
+[PASS] Performance summary values
+[PASS] FPS group report generation
+[PASS] Missing correlation handling
+[PASS] Stutter event report generation
+[PASS] Report generation result
+
+All 8 report generator tests passed.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ReportGeneratorTests" end time: Nov 03 01:39 India Standard Time
+"ReportGeneratorTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 03 01:39 India Standard Time

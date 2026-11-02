@@ -1,0 +1,338 @@
+DroidDeck Wayland session
+=========================
+Started   2026-10-27 18:22:35
+Display   Wayland: programs draw through the DroidDeck compositor.
+          gamescope and the desktop start their own Xwayland for X11 programs.
+Log       /data/user/0/com.droiddeck.launcher/files/logs/2026-10-27-01-steam/wayland.log
+
+Time          Area      Event
+------------  --------  -----------------------------------------------------
+18:22:35.261  cardboard head pose shared with the guest at /data/user/0/com.droiddeck.launcher/files/.wayland-rt/droiddeck-headpose
+18:22:35.270  perf      compositor thread 16613 "wl-compositor": nice -10 -> -10
+18:22:35.568  gpu       compositor renders on Adreno (TM) 810 with libvulkan_freedreno.so
+18:22:35.568  gpu       driver folder /data/user/0/com.droiddeck.launcher/files/graphics_driver/Mesa_Turnip_v27.0.0-20261016-r7-A8xx/
+18:22:35.628  perf      layer buffers: the display's release fences are waited for on the GPU (VK_KHR_external_semaphore_fd)
+18:22:35.634  framegen  engines ready on the compositor's device: LSFG Native available (supported (device Vulkan 1.4.363, fmt 37)), DD-FG Native available
+18:22:35.636  display   Wayland compositor listening on /data/user/0/com.droiddeck.launcher/files/.wayland-rt/wayland-0
+18:22:35.640  layer     zero-copy: banner_ahb_v1 version 2 advertised (games built for it present their own gralloc buffers while the switch is on)
+18:22:35.640  layer     zero-copy: off at launch (the drawer's Zero-copy presentation switch turns it on live)
+18:22:35.640  color     HDR output off for this session (the HDR output setting is off) - this display lists HDR10, so switching HDR output on for this game would offer it to games
+18:22:35.641  clipboard Android clipboard cleared (0 bytes)
+18:22:35.669  gpu       screen surface attached
+18:22:35.669  effects   scaling=SGSR HQ 35%, CAS off, Look="Off"
+18:22:35.669  desktop   no desktop: showing 1920x1080 (largest window)
+18:22:35.683  gpu       screen output 2354x1080, 5 buffers, vsync
+18:22:35.683  screen    fit, center: 1920x1080 scene shown 1920x1080 at 217,0 on the 2354x1080 output
+18:22:35.685  effects   scene image 1920x1080 for the effect chain
+18:22:35.687  gpu       surface reports SUBOPTIMAL (panel rotation); presenting as is
+18:22:38.102  program   connected over Wayland: wayland-info (pid 16729)
+18:22:38.105  dmabuf    formats: AR24 linear+qcom_compressed, XR24 linear+qcom_compressed, AB24 linear+qcom_compressed, XB24 linear+qcom_compressed
+18:22:38.106  dmabuf    feedback ready: 8 format/modifier pairs, main device 0:0
+18:22:38.106  dmabuf    this device gives apps no display (DRM) device (/dev/dri): OpenGL games need Wayland layer versionCode 9 or newer, which runs OpenGL on the GPU without a DRM node; older layers show a black window
+18:22:38.107  program   disconnected: wayland-info (pid 16729)
+18:22:38.564  program   connected over Wayland: gamescope (pid 16757)
+18:22:38.567  program   disconnected: gamescope (pid 16757)
+18:22:38.567  program   connected over Wayland: gamescope (pid 16757)
+18:22:38.729  program   connected over Wayland: gamescope (pid 16757)
+18:22:45.642  stats     last 10 s: 6 frames on screen (0.6 fps) | 0 GPU frames from games | 2 window redraws | 0 windows open
+18:22:45.642  perf      last 10 s: 1195 ticks, 6 scenes, 6 on screen (copy 6, zero-copy 0, layer copy 0) | render_scene 5.36/17.93 ms | base 0 black kept, 0 presented | acquire 0.31/1.42 ms | present 1.48/3.15 ms (6) | fence wait 0.56/1.55 ms (6, 0 GPU release waits) | release 0.00/0.00 ms (0, 0 held) | 0 pool drops
+18:22:56.935  program   connected over Wayland: steamwebhelper (pid 17278)
+18:22:56.938  program   disconnected: steamwebhelper (pid 17278)
+18:22:56.969  program   connected over Wayland: steamwebhelper (pid 17278)
+18:22:56.970  program   disconnected: steamwebhelper (pid 17278)
+18:22:57.029  program   connected over Wayland: steamwebhelper (pid 17278)
+18:22:57.030  program   disconnected: steamwebhelper (pid 17278)
+18:22:57.471  vulkan    "Steam Big Picture Mode" (gamescope) is presenting GPU frames through Wayland: 1280x720, format AR24, qcom_compressed (dma-buf: copied into the screen swapchain)
+18:22:57.475  window    opened "Steam Big Picture Mode" (gamescope) 1280x720 at 0,0 (no desktop position yet)
+18:22:57.477  desktop   no desktop: showing 1280x720 (largest window)
+18:22:57.477  screen    fit, center: 1280x720 scene shown 1920x1080 at 217,0 on the 2354x1080 output
+18:22:57.480  effects   scene image 1280x720 for the effect chain
+18:22:59.461  effects   chain ready: 13 passes (SGSR, SGSR HQ, NIS, FSR EASU+RCAS, CAS, colour, FXAA, Toon, HDR, NTSC, CRT, deband) on Adreno (TM) 810
+18:22:59.481  vulkan    "Steam Big Picture Mode" (gamescope) is presenting GPU frames through Wayland: 32x32, format AR24, qcom_compressed (dma-buf: copied into the screen swapchain)
+18:22:59.492  vulkan    "Steam Big Picture Mode" (gamescope) changed its frame size: 32x32 -> 1280x800
+18:22:59.504  gpu       alpha composition ready on Adreno (TM) 810: translucent surfaces are blended over what is under them
+18:22:59.846  vulkan    "Steam Big Picture Mode" (gamescope) changed its frame size: 1280x800 -> 1280x720
+18:23:05.643  stats     last 10 s: 218 frames on screen (21.8 fps) | 408 GPU frames from games | 0 window redraws | 1 windows open
+18:23:05.644  perf      last 10 s: 957 ticks, 218 scenes, 218 on screen (copy 218, zero-copy 0, layer copy 0) | render_scene 13.75/2003.93 ms | base 0 black kept, 0 presented | acquire 0.13/1.61 ms | present 1.48/9.31 ms (218) | fence wait 2.32/12.56 ms (218, 0 GPU release waits) | release 9.59/49.80 ms (406, 313 held) | 0 pool drops
+18:23:09.790  touch     "Steam Big Picture Mode" (gamescope) gets touch
+18:23:15.645  stats     last 10 s: 401 frames on screen (40.1 fps) | 792 GPU frames from games | 0 window redraws | 1 windows open
+18:23:15.645  perf      last 10 s: 1203 ticks, 401 scenes, 401 on screen (copy 401, zero-copy 0, layer copy 0) | render_scene 4.14/10.41 ms | base 0 black kept, 0 presented | acquire 0.14/1.52 ms | present 1.25/9.56 ms (401) | fence wait 2.12/5.64 ms (401, 0 GPU release waits) | release 11.83/32.78 ms (792, 740 held) | 0 pool drops
+18:23:20.513  touch     "Steam Big Picture Mode" (gamescope) gets touch
+18:23:21.678  touch     "Steam Big Picture Mode" (gamescope) gets touch
+18:23:25.649  stats     last 10 s: 400 frames on screen (40.0 fps) | 798 GPU frames from games | 0 window redraws | 1 windows open
+18:23:25.650  perf      last 10 s: 1205 ticks, 400 scenes, 400 on screen (copy 400, zero-copy 0, layer copy 0) | render_scene 4.11/9.01 ms | base 0 black kept, 0 presented | acquire 0.13/3.17 ms | present 1.20/7.60 ms (400) | fence wait 2.17/5.99 ms (400, 0 GPU release waits) | release 12.25/26.73 ms (796, 780 held) | 0 pool drops
+18:23:35.650  stats     last 10 s: 399 frames on screen (39.9 fps) | 795 GPU frames from games | 0 window redraws | 1 windows open
+18:23:35.651  perf      last 10 s: 1205 ticks, 399 scenes, 399 on screen (copy 399, zero-copy 0, layer copy 0) | render_scene 4.13/8.16 ms | base 0 black kept, 0 presented | acquire 0.15/1.66 ms | present 1.16/5.94 ms (399) | fence wait 2.19/7.14 ms (399, 0 GPU release waits) | release 10.20/34.84 ms (797, 780 held) | 0 pool drops
+18:23:39.261  touch     "Steam Big Picture Mode" (gamescope) gets touch
+18:23:43.647  clipboard Android clipboard cleared (0 bytes)
+18:23:45.652  stats     last 10 s: 321 frames on screen (32.1 fps) | 617 GPU frames from games | 0 window redraws | 1 windows open
+18:23:45.652  perf      last 10 s: 1099 ticks, 321 scenes, 321 on screen (copy 321, zero-copy 0, layer copy 0) | render_scene 5.04/65.99 ms | base 0 black kept, 0 presented | acquire 0.13/4.15 ms | present 1.12/45.45 ms (321) | fence wait 3.18/65.25 ms (321, 0 GPU release waits) | release 11.83/43.08 ms (617, 464 held) | 0 pool drops
+18:23:55.653  stats     last 10 s: 223 frames on screen (22.3 fps) | 404 GPU frames from games | 0 window redraws | 1 windows open
+18:23:55.653  perf      last 10 s: 1173 ticks, 223 scenes, 223 on screen (copy 223, zero-copy 0, layer copy 0) | render_scene 5.99/14.81 ms | base 0 black kept, 0 presented | acquire 0.15/1.25 ms | present 1.57/9.02 ms (223) | fence wait 3.44/10.36 ms (223, 0 GPU release waits) | release 4.73/32.71 ms (404, 156 held) | 0 pool drops
+18:23:57.836  vulkan    "Steam Big Picture Mode" (gamescope) is presenting GPU frames through Wayland: 32x32, format AR24, qcom_compressed (dma-buf: copied into the screen swapchain)
+18:24:05.656  stats     last 10 s: 263 frames on screen (26.3 fps) | 490 GPU frames from games | 0 window redraws | 1 windows open
+18:24:05.657  perf      last 10 s: 1179 ticks, 263 scenes, 263 on screen (copy 263, zero-copy 0, layer copy 0) | render_scene 6.50/26.45 ms | base 0 black kept, 0 presented | acquire 0.18/1.33 ms | present 1.58/10.51 ms (263) | fence wait 3.68/13.42 ms (263, 0 GPU release waits) | release 4.27/33.59 ms (489, 174 held) | 0 pool drops
+18:24:06.606  touch     "Steam Big Picture Mode" (gamescope) gets touch
+18:24:15.658  stats     last 10 s: 263 frames on screen (26.3 fps) | 508 GPU frames from games | 0 window redraws | 1 windows open
+18:24:15.659  perf      last 10 s: 1123 ticks, 263 scenes, 263 on screen (copy 263, zero-copy 0, layer copy 0) | render_scene 6.54/18.88 ms | base 0 black kept, 0 presented | acquire 0.15/6.84 ms | present 1.38/11.26 ms (263) | fence wait 4.23/17.16 ms (263, 0 GPU release waits) | release 5.08/45.01 ms (509, 230 held) | 0 pool drops
+18:24:20.081  touch     "Steam Big Picture Mode" (gamescope) gets touch
+18:24:25.659  stats     last 10 s: 354 frames on screen (35.4 fps) | 674 GPU frames from games | 0 window redraws | 1 windows open
+18:24:25.659  perf      last 10 s: 1200 ticks, 354 scenes, 354 on screen (copy 354, zero-copy 0, layer copy 0) | render_scene 5.82/28.47 ms | base 0 black kept, 0 presented | acquire 0.16/2.54 ms | present 1.31/11.93 ms (354) | fence wait 3.59/24.51 ms (354, 0 GPU release waits) | release 5.69/32.80 ms (674, 437 held) | 0 pool drops
+18:24:35.660  stats     last 10 s: 389 frames on screen (38.9 fps) | 759 GPU frames from games | 0 window redraws | 1 windows open
+18:24:35.661  perf      last 10 s: 1205 ticks, 389 scenes, 389 on screen (copy 389, zero-copy 0, layer copy 0) | render_scene 5.09/10.25 ms | base 0 black kept, 0 presented | acquire 0.16/4.69 ms | present 1.59/8.83 ms (389) | fence wait 2.61/7.71 ms (389, 0 GPU release waits) | release 8.26/41.00 ms (758, 650 held) | 0 pool drops
+18:24:45.662  stats     last 10 s: 391 frames on screen (39.1 fps) | 774 GPU frames from games | 0 window redraws | 1 windows open
+18:24:45.662  perf      last 10 s: 1204 ticks, 391 scenes, 391 on screen (copy 391, zero-copy 0, layer copy 0) | render_scene 4.34/8.47 ms | base 0 black kept, 0 presented | acquire 0.12/1.30 ms | present 1.43/6.37 ms (391) | fence wait 2.17/6.00 ms (391, 0 GPU release waits) | release 12.84/38.12 ms (773, 700 held) | 0 pool drops
+18:24:52.766  window    renamed "Steam Big Picture Mode" (gamescope) -> "Eastward" (gamescope)
+18:24:52.773  vulkan    "Eastward" (gamescope) is presenting GPU frames through Wayland: 1280x720, format XR24, qcom_compressed (dma-buf: copied into the screen swapchain)
+18:24:55.665  stats     last 10 s: 287 frames on screen (28.7 fps) | 556 GPU frames from games | 0 window redraws | 1 windows open
+18:24:55.666  perf      last 10 s: 1200 ticks, 287 scenes, 287 on screen (copy 287, zero-copy 0, layer copy 0) | render_scene 4.33/8.01 ms | base 0 black kept, 0 presented | acquire 0.13/1.22 ms | present 1.44/5.81 ms (287) | fence wait 2.12/7.27 ms (287, 0 GPU release waits) | release 11.31/32.05 ms (558, 512 held) | 0 pool drops
+18:25:01.617  touch     "Eastward" (gamescope) gets touch
+18:25:01.626  vulkan    "Eastward" (gamescope) changed its frame size: 1280x720 -> 24x24
+18:25:03.910  touch     "Eastward" (gamescope) gets touch
+18:25:04.132  pointer   lock requested by gamescope for "Eastward" (gamescope)
+18:25:04.132  pointer   locked: "Eastward" (gamescope) (persistent), pointer frozen at 0,0
+18:25:04.140  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:25:04.140  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:25:05.669  stats     last 10 s: 11 frames on screen (1.1 fps) | 4 GPU frames from games | 0 window redraws | 1 windows open
+18:25:05.670  perf      last 10 s: 1204 ticks, 11 scenes, 11 on screen (copy 11, zero-copy 0, layer copy 0) | render_scene 4.19/5.10 ms | base 0 black kept, 0 presented | acquire 0.09/0.21 ms | present 0.93/2.85 ms (11) | fence wait 2.71/4.28 ms (11, 0 GPU release waits) | release 0.22/0.32 ms (4, 0 held) | 0 pool drops
+18:25:06.381  touch     "Eastward" (gamescope) gets touch
+18:25:15.670  stats     last 10 s: 41 frames on screen (4.1 fps) | 70 GPU frames from games | 0 window redraws | 1 windows open
+18:25:15.671  perf      last 10 s: 1199 ticks, 41 scenes, 41 on screen (copy 41, zero-copy 0, layer copy 0) | render_scene 4.34/5.78 ms | base 0 black kept, 0 presented | acquire 0.13/0.37 ms | present 1.00/4.04 ms (41) | fence wait 2.71/4.14 ms (41, 0 GPU release waits) | release 6.52/35.58 ms (70, 39 held) | 0 pool drops
+18:25:25.671  stats     last 10 s: 165 frames on screen (16.5 fps) | 318 GPU frames from games | 0 window redraws | 1 windows open
+18:25:25.672  perf      last 10 s: 1192 ticks, 165 scenes, 165 on screen (copy 165, zero-copy 0, layer copy 0) | render_scene 5.83/18.26 ms | base 0 black kept, 0 presented | acquire 0.14/0.96 ms | present 1.21/5.76 ms (165) | fence wait 3.85/17.35 ms (165, 0 GPU release waits) | release 7.70/56.27 ms (317, 244 held) | 0 pool drops
+18:25:29.546  touch     "Eastward" (gamescope) gets touch
+18:25:35.672  stats     last 10 s: 399 frames on screen (39.9 fps) | 795 GPU frames from games | 0 window redraws | 1 windows open
+18:25:35.672  perf      last 10 s: 1203 ticks, 399 scenes, 399 on screen (copy 399, zero-copy 0, layer copy 0) | render_scene 4.84/11.74 ms | base 0 black kept, 0 presented | acquire 0.14/2.11 ms | present 1.18/9.24 ms (399) | fence wait 2.93/10.57 ms (399, 0 GPU release waits) | release 12.49/56.29 ms (796, 766 held) | 0 pool drops
+18:25:39.123  touch     "Eastward" (gamescope) gets touch
+18:25:45.674  stats     last 10 s: 371 frames on screen (37.1 fps) | 735 GPU frames from games | 0 window redraws | 1 windows open
+18:25:45.674  perf      last 10 s: 1204 ticks, 371 scenes, 371 on screen (copy 371, zero-copy 0, layer copy 0) | render_scene 4.49/9.05 ms | base 0 black kept, 0 presented | acquire 0.12/1.09 ms | present 0.92/5.29 ms (371) | fence wait 2.93/7.31 ms (371, 0 GPU release waits) | release 19.80/67.54 ms (735, 703 held) | 0 pool drops
+18:25:55.675  stats     last 10 s: 383 frames on screen (38.3 fps) | 757 GPU frames from games | 0 window redraws | 1 windows open
+18:25:55.675  perf      last 10 s: 1192 ticks, 383 scenes, 383 on screen (copy 383, zero-copy 0, layer copy 0) | render_scene 6.11/83.04 ms | base 0 black kept, 0 presented | acquire 0.15/2.56 ms | present 1.17/10.72 ms (383) | fence wait 3.94/13.30 ms (383, 0 GPU release waits) | release 19.30/63.77 ms (757, 680 held) | 0 pool drops
+18:26:05.675  stats     last 10 s: 342 frames on screen (34.2 fps) | 682 GPU frames from games | 0 window redraws | 1 windows open
+18:26:05.679  perf      last 10 s: 1204 ticks, 342 scenes, 342 on screen (copy 342, zero-copy 0, layer copy 0) | render_scene 5.56/14.73 ms | base 0 black kept, 0 presented | acquire 0.16/1.91 ms | present 1.12/6.97 ms (342) | fence wait 3.61/12.80 ms (342, 0 GPU release waits) | release 19.37/57.76 ms (681, 656 held) | 0 pool drops
+18:26:15.581  touch     "Eastward" (gamescope) gets touch
+18:26:15.682  stats     last 10 s: 313 frames on screen (31.3 fps) | 614 GPU frames from games | 0 window redraws | 1 windows open
+18:26:15.683  perf      last 10 s: 1182 ticks, 313 scenes, 313 on screen (copy 313, zero-copy 0, layer copy 0) | render_scene 7.18/22.88 ms | base 0 black kept, 0 presented | acquire 0.16/1.86 ms | present 1.38/20.09 ms (313) | fence wait 4.95/18.17 ms (313, 0 GPU release waits) | release 11.48/53.30 ms (615, 410 held) | 0 pool drops
+18:26:22.871  clipboard Android clipboard cleared (0 bytes)
+18:26:25.684  stats     last 10 s: 86 frames on screen (8.6 fps) | 154 GPU frames from games | 0 window redraws | 1 windows open
+18:26:25.685  perf      last 10 s: 1191 ticks, 86 scenes, 86 on screen (copy 86, zero-copy 0, layer copy 0) | render_scene 7.54/19.26 ms | base 0 black kept, 0 presented | acquire 0.15/1.70 ms | present 1.08/9.53 ms (86) | fence wait 5.46/12.87 ms (86, 0 GPU release waits) | release 6.96/33.65 ms (154, 83 held) | 0 pool drops
+18:26:35.686  stats     last 10 s: 128 frames on screen (12.8 fps) | 252 GPU frames from games | 0 window redraws | 1 windows open
+18:26:35.689  perf      last 10 s: 1194 ticks, 128 scenes, 128 on screen (copy 128, zero-copy 0, layer copy 0) | render_scene 5.79/17.26 ms | base 0 black kept, 0 presented | acquire 0.20/7.56 ms | present 1.14/16.61 ms (128) | fence wait 3.86/11.59 ms (128, 0 GPU release waits) | release 13.80/55.21 ms (252, 159 held) | 0 pool drops
+18:26:40.582  clipboard Android clipboard cleared (0 bytes)
+18:26:45.689  stats     last 10 s: 356 frames on screen (35.6 fps) | 703 GPU frames from games | 0 window redraws | 1 windows open
+18:26:45.690  perf      last 10 s: 1191 ticks, 356 scenes, 356 on screen (copy 356, zero-copy 0, layer copy 0) | render_scene 5.03/11.92 ms | base 0 black kept, 0 presented | acquire 0.12/0.94 ms | present 1.12/6.76 ms (356) | fence wait 3.14/10.74 ms (356, 0 GPU release waits) | release 17.01/62.97 ms (703, 591 held) | 0 pool drops
+18:26:55.690  stats     last 10 s: 287 frames on screen (28.7 fps) | 544 GPU frames from games | 0 window redraws | 1 windows open
+18:26:55.692  perf      last 10 s: 1189 ticks, 287 scenes, 287 on screen (copy 287, zero-copy 0, layer copy 0) | render_scene 5.99/14.80 ms | base 0 black kept, 0 presented | acquire 0.15/2.68 ms | present 1.01/12.29 ms (287) | fence wait 4.24/12.30 ms (287, 0 GPU release waits) | release 16.20/81.59 ms (543, 400 held) | 0 pool drops
+18:27:05.692  stats     last 10 s: 156 frames on screen (15.6 fps) | 304 GPU frames from games | 0 window redraws | 1 windows open
+18:27:05.693  perf      last 10 s: 1205 ticks, 156 scenes, 156 on screen (copy 156, zero-copy 0, layer copy 0) | render_scene 4.53/9.31 ms | base 0 black kept, 0 presented | acquire 0.12/0.57 ms | present 1.02/4.46 ms (156) | fence wait 2.75/6.40 ms (156, 0 GPU release waits) | release 13.17/65.68 ms (305, 236 held) | 0 pool drops
+18:27:35.695  stats     last 10 s: 10 frames on screen (1.0 fps) | 15 GPU frames from games | 0 window redraws | 1 windows open
+18:27:35.697  perf      last 10 s: 1204 ticks, 10 scenes, 10 on screen (copy 10, zero-copy 0, layer copy 0) | render_scene 5.36/10.12 ms | base 0 black kept, 0 presented | acquire 0.17/0.51 ms | present 1.84/4.06 ms (10) | fence wait 2.28/5.00 ms (10, 0 GPU release waits) | release 1.30/9.91 ms (15, 3 held) | 0 pool drops
+18:27:45.698  stats     last 10 s: 351 frames on screen (35.1 fps) | 691 GPU frames from games | 0 window redraws | 1 windows open
+18:27:45.698  perf      last 10 s: 1203 ticks, 351 scenes, 351 on screen (copy 351, zero-copy 0, layer copy 0) | render_scene 8.01/17.33 ms | base 0 black kept, 0 presented | acquire 0.24/1.88 ms | present 1.36/8.07 ms (351) | fence wait 5.45/14.45 ms (351, 0 GPU release waits) | release 17.58/57.64 ms (690, 560 held) | 0 pool drops
+18:27:55.703  stats     last 10 s: 396 frames on screen (39.6 fps) | 779 GPU frames from games | 0 window redraws | 1 windows open
+18:27:55.706  perf      last 10 s: 1199 ticks, 396 scenes, 396 on screen (copy 396, zero-copy 0, layer copy 0) | render_scene 8.14/20.36 ms | base 0 black kept, 0 presented | acquire 0.22/2.95 ms | present 1.40/6.95 ms (396) | fence wait 5.51/14.04 ms (396, 0 GPU release waits) | release 16.65/57.90 ms (778, 686 held) | 0 pool drops
+18:28:01.623  touch     "Eastward" (gamescope) gets touch
+18:28:02.648  pointer   unlocked: "Eastward" (gamescope) (released by the program), pointer at 0,0
+18:28:02.648  pointer   relative pointer released by gamescope
+18:28:02.648  pointer   relative pointer released by gamescope
+18:28:02.648  pointer   lock requested by gamescope for "Eastward" (gamescope)
+18:28:02.648  pointer   locked: "Eastward" (gamescope) (persistent), pointer frozen at 0,0
+18:28:02.649  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:28:02.649  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:28:05.706  stats     last 10 s: 293 frames on screen (29.3 fps) | 587 GPU frames from games | 0 window redraws | 1 windows open
+18:28:05.706  perf      last 10 s: 1036 ticks, 293 scenes, 293 on screen (copy 293, zero-copy 0, layer copy 0) | render_scene 7.77/57.76 ms | base 0 black kept, 0 presented | acquire 0.20/5.34 ms | present 1.47/17.26 ms (293) | fence wait 5.28/56.32 ms (293, 0 GPU release waits) | release 17.09/58.15 ms (589, 427 held) | 0 pool drops
+18:28:15.733  stats     last 10 s: 336 frames on screen (33.6 fps) | 667 GPU frames from games | 0 window redraws | 1 windows open
+18:28:15.737  perf      last 10 s: 879 ticks, 336 scenes, 336 on screen (copy 336, zero-copy 0, layer copy 0) | render_scene 9.75/33.89 ms | base 0 black kept, 0 presented | acquire 0.18/3.74 ms | present 1.34/12.43 ms (336) | fence wait 7.43/32.05 ms (336, 0 GPU release waits) | release 15.18/66.84 ms (667, 460 held) | 0 pool drops
+18:28:18.631  clipboard Android clipboard cleared (0 bytes)
+18:28:18.686  pointer   unlocked: "Eastward" (gamescope) (released by the program), pointer at 0,0
+18:28:18.686  pointer   relative pointer released by gamescope
+18:28:18.686  pointer   relative pointer released by gamescope
+18:28:18.686  pointer   lock requested by gamescope for "Eastward" (gamescope)
+18:28:18.686  pointer   locked: "Eastward" (gamescope) (persistent), pointer frozen at 0,0
+18:28:18.686  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:28:18.686  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:28:25.738  stats     last 10 s: 338 frames on screen (33.8 fps) | 657 GPU frames from games | 0 window redraws | 1 windows open
+18:28:25.738  perf      last 10 s: 1104 ticks, 338 scenes, 338 on screen (copy 338, zero-copy 0, layer copy 0) | render_scene 8.30/29.56 ms | base 0 black kept, 0 presented | acquire 0.14/2.71 ms | present 1.06/6.70 ms (338) | fence wait 6.43/26.19 ms (338, 0 GPU release waits) | release 8.43/50.20 ms (657, 481 held) | 0 pool drops
+18:28:35.739  stats     last 10 s: 337 frames on screen (33.7 fps) | 662 GPU frames from games | 0 window redraws | 1 windows open
+18:28:35.741  perf      last 10 s: 1188 ticks, 337 scenes, 337 on screen (copy 337, zero-copy 0, layer copy 0) | render_scene 7.81/39.96 ms | base 0 black kept, 0 presented | acquire 0.22/4.43 ms | present 1.50/38.45 ms (337) | fence wait 5.18/19.00 ms (337, 0 GPU release waits) | release 13.36/68.89 ms (662, 497 held) | 0 pool drops
+18:28:42.026  touch     "Eastward" (gamescope) gets touch
+18:28:43.132  pointer   unlocked: "Eastward" (gamescope) (released by the program), pointer at 0,0
+18:28:43.133  pointer   relative pointer released by gamescope
+18:28:43.134  pointer   relative pointer released by gamescope
+18:28:43.152  pointer   lock requested by gamescope for "Eastward" (gamescope)
+18:28:43.152  pointer   locked: "Eastward" (gamescope) (persistent), pointer frozen at 0,0
+18:28:43.152  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:28:43.152  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:28:45.743  stats     last 10 s: 313 frames on screen (31.3 fps) | 594 GPU frames from games | 0 window redraws | 1 windows open
+18:28:45.743  perf      last 10 s: 1096 ticks, 313 scenes, 313 on screen (copy 313, zero-copy 0, layer copy 0) | render_scene 6.47/32.40 ms | base 0 black kept, 0 presented | acquire 0.15/2.08 ms | present 1.22/19.15 ms (313) | fence wait 4.44/31.65 ms (313, 0 GPU release waits) | release 8.56/56.01 ms (591, 395 held) | 0 pool drops
+18:28:55.744  stats     last 10 s: 387 frames on screen (38.7 fps) | 758 GPU frames from games | 0 window redraws | 1 windows open
+18:28:55.745  perf      last 10 s: 901 ticks, 387 scenes, 387 on screen (copy 387, zero-copy 0, layer copy 0) | render_scene 6.24/19.78 ms | base 0 black kept, 0 presented | acquire 0.15/2.31 ms | present 1.22/16.51 ms (387) | fence wait 4.14/14.00 ms (387, 0 GPU release waits) | release 22.01/69.83 ms (760, 655 held) | 0 pool drops
+18:29:05.745  stats     last 10 s: 390 frames on screen (39.0 fps) | 777 GPU frames from games | 0 window redraws | 1 windows open
+18:29:05.745  perf      last 10 s: 904 ticks, 390 scenes, 390 on screen (copy 390, zero-copy 0, layer copy 0) | render_scene 5.68/12.51 ms | base 0 black kept, 0 presented | acquire 0.14/3.68 ms | present 1.27/5.52 ms (390) | fence wait 3.54/11.28 ms (390, 0 GPU release waits) | release 22.31/62.75 ms (775, 688 held) | 0 pool drops
+18:29:15.746  stats     last 10 s: 360 frames on screen (36.0 fps) | 699 GPU frames from games | 0 window redraws | 1 windows open
+18:29:15.746  perf      last 10 s: 883 ticks, 360 scenes, 360 on screen (copy 360, zero-copy 0, layer copy 0) | render_scene 7.15/22.63 ms | base 0 black kept, 0 presented | acquire 0.17/6.98 ms | present 1.27/20.81 ms (360) | fence wait 5.00/19.68 ms (360, 0 GPU release waits) | release 15.80/63.09 ms (702, 527 held) | 0 pool drops
+18:29:25.747  stats     last 10 s: 374 frames on screen (37.4 fps) | 736 GPU frames from games | 0 window redraws | 1 windows open
+18:29:25.748  perf      last 10 s: 895 ticks, 374 scenes, 374 on screen (copy 374, zero-copy 0, layer copy 0) | render_scene 6.50/19.70 ms | base 0 black kept, 0 presented | acquire 0.16/3.78 ms | present 1.39/13.23 ms (374) | fence wait 4.15/11.59 ms (374, 0 GPU release waits) | release 19.89/65.10 ms (735, 602 held) | 0 pool drops
+18:29:35.748  stats     last 10 s: 377 frames on screen (37.7 fps) | 761 GPU frames from games | 0 window redraws | 1 windows open
+18:29:35.749  perf      last 10 s: 902 ticks, 377 scenes, 377 on screen (copy 377, zero-copy 0, layer copy 0) | render_scene 6.44/27.02 ms | base 0 black kept, 0 presented | acquire 0.17/5.90 ms | present 1.49/22.38 ms (377) | fence wait 3.99/15.86 ms (377, 0 GPU release waits) | release 20.90/64.26 ms (762, 663 held) | 0 pool drops
+18:29:39.832  clipboard Android clipboard cleared (0 bytes)
+18:29:40.075  pointer   unlocked: "Eastward" (gamescope) (released by the program), pointer at 0,0
+18:29:40.075  pointer   relative pointer released by gamescope
+18:29:40.075  pointer   relative pointer released by gamescope
+18:29:40.076  pointer   lock requested by gamescope for "Eastward" (gamescope)
+18:29:40.076  pointer   locked: "Eastward" (gamescope) (persistent), pointer frozen at 0,0
+18:29:40.076  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:29:40.076  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:29:45.749  stats     last 10 s: 361 frames on screen (36.1 fps) | 709 GPU frames from games | 0 window redraws | 1 windows open
+18:29:45.751  perf      last 10 s: 1053 ticks, 361 scenes, 361 on screen (copy 361, zero-copy 0, layer copy 0) | render_scene 5.91/13.74 ms | base 0 black kept, 0 presented | acquire 0.15/1.67 ms | present 1.21/13.40 ms (361) | fence wait 3.89/11.51 ms (361, 0 GPU release waits) | release 19.48/97.97 ms (708, 594 held) | 0 pool drops
+18:29:55.754  stats     last 10 s: 394 frames on screen (39.4 fps) | 780 GPU frames from games | 0 window redraws | 1 windows open
+18:29:55.754  perf      last 10 s: 1202 ticks, 394 scenes, 394 on screen (copy 394, zero-copy 0, layer copy 0) | render_scene 6.01/13.87 ms | base 0 black kept, 0 presented | acquire 0.20/5.94 ms | present 1.24/5.78 ms (394) | fence wait 3.78/10.76 ms (394, 0 GPU release waits) | release 13.26/52.95 ms (779, 708 held) | 0 pool drops
+18:30:05.756  stats     last 10 s: 394 frames on screen (39.4 fps) | 778 GPU frames from games | 0 window redraws | 1 windows open
+18:30:05.757  perf      last 10 s: 1206 ticks, 394 scenes, 394 on screen (copy 394, zero-copy 0, layer copy 0) | render_scene 5.52/12.32 ms | base 0 black kept, 0 presented | acquire 0.16/5.04 ms | present 1.17/6.79 ms (394) | fence wait 3.49/8.50 ms (394, 0 GPU release waits) | release 12.56/61.59 ms (779, 657 held) | 0 pool drops
+18:30:15.758  stats     last 10 s: 385 frames on screen (38.5 fps) | 767 GPU frames from games | 0 window redraws | 1 windows open
+18:30:15.761  perf      last 10 s: 1202 ticks, 385 scenes, 385 on screen (copy 385, zero-copy 0, layer copy 0) | render_scene 5.85/16.13 ms | base 0 black kept, 0 presented | acquire 0.16/2.70 ms | present 1.13/10.52 ms (385) | fence wait 3.88/14.26 ms (385, 0 GPU release waits) | release 18.77/58.50 ms (768, 678 held) | 0 pool drops
+18:30:25.761  stats     last 10 s: 400 frames on screen (40.0 fps) | 796 GPU frames from games | 0 window redraws | 1 windows open
+18:30:25.761  perf      last 10 s: 1202 ticks, 400 scenes, 400 on screen (copy 400, zero-copy 0, layer copy 0) | render_scene 5.54/16.40 ms | base 0 black kept, 0 presented | acquire 0.15/1.53 ms | present 1.07/7.78 ms (400) | fence wait 3.63/15.19 ms (400, 0 GPU release waits) | release 15.01/63.19 ms (793, 765 held) | 0 pool drops
+18:30:33.342  touch     "Eastward" (gamescope) gets touch
+18:30:34.451  pointer   unlocked: "Eastward" (gamescope) (released by the program), pointer at 0,0
+18:30:34.452  pointer   relative pointer released by gamescope
+18:30:34.452  pointer   relative pointer released by gamescope
+18:30:34.452  pointer   lock requested by gamescope for "Eastward" (gamescope)
+18:30:34.452  pointer   locked: "Eastward" (gamescope) (persistent), pointer frozen at 0,0
+18:30:34.452  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:30:34.452  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:30:35.761  stats     last 10 s: 364 frames on screen (36.4 fps) | 728 GPU frames from games | 0 window redraws | 1 windows open
+18:30:35.762  perf      last 10 s: 1140 ticks, 364 scenes, 364 on screen (copy 364, zero-copy 0, layer copy 0) | render_scene 5.67/21.19 ms | base 0 black kept, 0 presented | acquire 0.19/4.68 ms | present 1.23/12.03 ms (364) | fence wait 3.59/20.57 ms (364, 0 GPU release waits) | release 26.73/57.02 ms (731, 643 held) | 0 pool drops
+18:30:35.802  clipboard Android clipboard cleared (0 bytes)
+18:30:35.871  pointer   unlocked: "Eastward" (gamescope) (released by the program), pointer at 0,0
+18:30:35.871  pointer   relative pointer released by gamescope
+18:30:35.871  pointer   relative pointer released by gamescope
+18:30:35.923  pointer   lock requested by gamescope for "Eastward" (gamescope)
+18:30:35.923  pointer   locked: "Eastward" (gamescope) (persistent), pointer frozen at 0,0
+18:30:35.932  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:30:35.932  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:30:36.147  pointer   unlocked: "Eastward" (gamescope) (released by the program), pointer at 0,0
+18:30:36.148  pointer   relative pointer released by gamescope
+18:30:36.148  pointer   relative pointer released by gamescope
+18:30:36.148  pointer   lock requested by gamescope for "Eastward" (gamescope)
+18:30:36.148  pointer   locked: "Eastward" (gamescope) (persistent), pointer frozen at 0,0
+18:30:36.149  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:30:36.149  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:30:39.838  clipboard Android clipboard cleared (0 bytes)
+18:30:39.981  pointer   unlocked: "Eastward" (gamescope) (released by the program), pointer at 0,0
+18:30:39.981  pointer   relative pointer released by gamescope
+18:30:39.981  pointer   relative pointer released by gamescope
+18:30:39.981  pointer   lock requested by gamescope for "Eastward" (gamescope)
+18:30:39.981  pointer   locked: "Eastward" (gamescope) (persistent), pointer frozen at 0,0
+18:30:39.982  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:30:39.982  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:30:42.468  clipboard Android clipboard cleared (0 bytes)
+18:30:45.765  stats     last 10 s: 299 frames on screen (29.9 fps) | 534 GPU frames from games | 0 window redraws | 1 windows open
+18:30:45.766  perf      last 10 s: 1024 ticks, 299 scenes, 299 on screen (copy 299, zero-copy 0, layer copy 0) | render_scene 6.94/21.80 ms | base 0 black kept, 0 presented | acquire 0.17/6.19 ms | present 1.24/15.15 ms (299) | fence wait 4.66/19.44 ms (299, 0 GPU release waits) | release 10.01/57.51 ms (532, 290 held) | 0 pool drops
+18:30:55.767  stats     last 10 s: 358 frames on screen (35.8 fps) | 700 GPU frames from games | 0 window redraws | 1 windows open
+18:30:55.768  perf      last 10 s: 1202 ticks, 358 scenes, 358 on screen (copy 358, zero-copy 0, layer copy 0) | render_scene 6.00/15.15 ms | base 0 black kept, 0 presented | acquire 0.18/4.66 ms | present 1.29/10.82 ms (358) | fence wait 3.71/11.02 ms (358, 0 GPU release waits) | release 13.25/56.98 ms (702, 548 held) | 0 pool drops
+18:31:05.769  stats     last 10 s: 369 frames on screen (36.9 fps) | 716 GPU frames from games | 0 window redraws | 1 windows open
+18:31:05.769  perf      last 10 s: 1195 ticks, 369 scenes, 369 on screen (copy 369, zero-copy 0, layer copy 0) | render_scene 6.18/22.47 ms | base 0 black kept, 0 presented | acquire 0.16/2.71 ms | present 1.10/19.79 ms (369) | fence wait 4.17/20.62 ms (369, 0 GPU release waits) | release 17.65/56.35 ms (713, 565 held) | 0 pool drops
+18:31:15.772  stats     last 10 s: 362 frames on screen (36.2 fps) | 699 GPU frames from games | 0 window redraws | 1 windows open
+18:31:15.773  perf      last 10 s: 1194 ticks, 362 scenes, 362 on screen (copy 362, zero-copy 0, layer copy 0) | render_scene 6.09/18.52 ms | base 0 black kept, 0 presented | acquire 0.18/4.28 ms | present 1.33/11.38 ms (362) | fence wait 3.81/17.68 ms (362, 0 GPU release waits) | release 13.11/54.75 ms (702, 554 held) | 0 pool drops
+18:31:25.779  stats     last 10 s: 383 frames on screen (38.3 fps) | 749 GPU frames from games | 0 window redraws | 1 windows open
+18:31:25.779  perf      last 10 s: 1205 ticks, 383 scenes, 383 on screen (copy 383, zero-copy 0, layer copy 0) | render_scene 5.57/13.32 ms | base 0 black kept, 0 presented | acquire 0.18/2.66 ms | present 1.21/6.24 ms (383) | fence wait 3.45/11.79 ms (383, 0 GPU release waits) | release 19.67/65.61 ms (749, 657 held) | 0 pool drops
+18:31:35.784  stats     last 10 s: 376 frames on screen (37.6 fps) | 746 GPU frames from games | 0 window redraws | 1 windows open
+18:31:35.787  perf      last 10 s: 1205 ticks, 376 scenes, 376 on screen (copy 376, zero-copy 0, layer copy 0) | render_scene 5.86/14.16 ms | base 0 black kept, 0 presented | acquire 0.19/4.34 ms | present 1.16/5.32 ms (376) | fence wait 3.72/13.04 ms (376, 0 GPU release waits) | release 13.82/63.77 ms (745, 627 held) | 0 pool drops
+18:31:45.788  stats     last 10 s: 395 frames on screen (39.5 fps) | 787 GPU frames from games | 0 window redraws | 1 windows open
+18:31:45.789  perf      last 10 s: 1205 ticks, 395 scenes, 395 on screen (copy 395, zero-copy 0, layer copy 0) | render_scene 5.43/13.74 ms | base 0 black kept, 0 presented | acquire 0.16/2.50 ms | present 1.08/4.79 ms (395) | fence wait 3.42/11.76 ms (395, 0 GPU release waits) | release 17.29/57.72 ms (786, 735 held) | 0 pool drops
+18:31:55.791  stats     last 10 s: 381 frames on screen (38.1 fps) | 749 GPU frames from games | 0 window redraws | 1 windows open
+18:31:55.793  perf      last 10 s: 1197 ticks, 381 scenes, 381 on screen (copy 381, zero-copy 0, layer copy 0) | render_scene 6.00/23.00 ms | base 0 black kept, 0 presented | acquire 0.17/4.43 ms | present 1.11/9.22 ms (381) | fence wait 4.01/21.49 ms (381, 0 GPU release waits) | release 14.32/64.51 ms (748, 604 held) | 0 pool drops
+18:32:05.794  stats     last 10 s: 386 frames on screen (38.6 fps) | 765 GPU frames from games | 0 window redraws | 1 windows open
+18:32:05.795  perf      last 10 s: 1206 ticks, 386 scenes, 386 on screen (copy 386, zero-copy 0, layer copy 0) | render_scene 5.42/15.52 ms | base 0 black kept, 0 presented | acquire 0.18/1.84 ms | present 1.27/12.66 ms (386) | fence wait 3.29/9.03 ms (386, 0 GPU release waits) | release 11.96/59.62 ms (766, 654 held) | 0 pool drops
+18:32:15.795  stats     last 10 s: 342 frames on screen (34.2 fps) | 674 GPU frames from games | 0 window redraws | 1 windows open
+18:32:15.799  perf      last 10 s: 1202 ticks, 342 scenes, 342 on screen (copy 342, zero-copy 0, layer copy 0) | render_scene 6.52/17.06 ms | base 0 black kept, 0 presented | acquire 0.19/2.53 ms | present 1.28/8.17 ms (342) | fence wait 4.23/14.20 ms (342, 0 GPU release waits) | release 11.60/64.88 ms (675, 523 held) | 0 pool drops
+18:32:25.802  stats     last 10 s: 353 frames on screen (35.3 fps) | 682 GPU frames from games | 0 window redraws | 1 windows open
+18:32:25.803  perf      last 10 s: 1172 ticks, 353 scenes, 353 on screen (copy 353, zero-copy 0, layer copy 0) | render_scene 8.63/29.10 ms | base 0 black kept, 0 presented | acquire 0.22/3.29 ms | present 1.45/11.01 ms (353) | fence wait 5.90/25.34 ms (353, 0 GPU release waits) | release 10.48/60.26 ms (683, 513 held) | 0 pool drops
+18:32:35.806  stats     last 10 s: 384 frames on screen (38.4 fps) | 755 GPU frames from games | 0 window redraws | 1 windows open
+18:32:35.806  perf      last 10 s: 1198 ticks, 384 scenes, 384 on screen (copy 384, zero-copy 0, layer copy 0) | render_scene 7.61/20.52 ms | base 0 black kept, 0 presented | acquire 0.21/2.40 ms | present 1.46/9.65 ms (384) | fence wait 5.02/19.11 ms (384, 0 GPU release waits) | release 8.04/43.02 ms (755, 619 held) | 0 pool drops
+18:32:44.651  touch     "Eastward" (gamescope) gets touch
+18:32:45.807  stats     last 10 s: 343 frames on screen (34.3 fps) | 665 GPU frames from games | 0 window redraws | 1 windows open
+18:32:45.807  perf      last 10 s: 1177 ticks, 343 scenes, 343 on screen (copy 343, zero-copy 0, layer copy 0) | render_scene 7.87/21.94 ms | base 0 black kept, 0 presented | acquire 0.21/2.26 ms | present 1.46/17.13 ms (343) | fence wait 5.23/18.34 ms (343, 0 GPU release waits) | release 5.48/46.90 ms (665, 417 held) | 0 pool drops
+18:32:55.811  stats     last 10 s: 236 frames on screen (23.6 fps) | 454 GPU frames from games | 0 window redraws | 1 windows open
+18:32:55.812  perf      last 10 s: 1181 ticks, 236 scenes, 236 on screen (copy 236, zero-copy 0, layer copy 0) | render_scene 8.91/26.37 ms | base 0 black kept, 0 presented | acquire 0.29/3.86 ms | present 1.62/11.49 ms (236) | fence wait 6.07/23.69 ms (236, 0 GPU release waits) | release 13.31/59.72 ms (454, 335 held) | 0 pool drops
+18:33:05.814  stats     last 10 s: 151 frames on screen (15.1 fps) | 283 GPU frames from games | 0 window redraws | 1 windows open
+18:33:05.814  perf      last 10 s: 1203 ticks, 151 scenes, 151 on screen (copy 151, zero-copy 0, layer copy 0) | render_scene 6.08/16.75 ms | base 0 black kept, 0 presented | acquire 0.17/1.01 ms | present 1.25/7.18 ms (151) | fence wait 3.87/12.86 ms (151, 0 GPU release waits) | release 3.37/37.27 ms (283, 112 held) | 0 pool drops
+18:33:15.814  stats     last 10 s: 247 frames on screen (24.7 fps) | 459 GPU frames from games | 0 window redraws | 1 windows open
+18:33:15.817  perf      last 10 s: 1197 ticks, 247 scenes, 247 on screen (copy 247, zero-copy 0, layer copy 0) | render_scene 6.91/20.66 ms | base 0 black kept, 0 presented | acquire 0.17/1.20 ms | present 1.41/7.95 ms (247) | fence wait 4.55/17.09 ms (247, 0 GPU release waits) | release 4.24/53.82 ms (459, 185 held) | 0 pool drops
+18:33:21.717  touch     "Eastward" (gamescope) gets touch
+18:33:23.190  pointer   unlocked: "Eastward" (gamescope) (released by the program), pointer at 0,0
+18:33:23.191  pointer   relative pointer released by gamescope
+18:33:23.191  pointer   relative pointer released by gamescope
+18:33:23.211  pointer   lock requested by gamescope for "Eastward" (gamescope)
+18:33:23.211  pointer   locked: "Eastward" (gamescope) (persistent), pointer frozen at 0,0
+18:33:23.211  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:33:23.211  pointer   relative pointer created for gamescope (motion arrives as deltas)
+18:33:24.551  clipboard Android clipboard cleared (0 bytes)
+18:33:25.821  stats     last 10 s: 231 frames on screen (23.1 fps) | 426 GPU frames from games | 0 window redraws | 1 windows open
+18:33:25.821  perf      last 10 s: 1066 ticks, 231 scenes, 231 on screen (copy 231, zero-copy 0, layer copy 0) | render_scene 8.06/33.32 ms | base 0 black kept, 0 presented | acquire 0.19/2.52 ms | present 1.79/32.77 ms (231) | fence wait 5.25/22.75 ms (231, 0 GPU release waits) | release 3.93/44.04 ms (426, 151 held) | 0 pool drops
+18:33:35.825  stats     last 10 s: 324 frames on screen (32.4 fps) | 624 GPU frames from games | 0 window redraws | 1 windows open
+18:33:35.825  perf      last 10 s: 905 ticks, 324 scenes, 324 on screen (copy 324, zero-copy 0, layer copy 0) | render_scene 7.64/18.18 ms | base 0 black kept, 0 presented | acquire 0.21/1.96 ms | present 1.47/10.15 ms (324) | fence wait 5.03/15.48 ms (324, 0 GPU release waits) | release 11.20/61.50 ms (622, 393 held) | 0 pool drops
+18:33:45.826  stats     last 10 s: 295 frames on screen (29.5 fps) | 568 GPU frames from games | 0 window redraws | 1 windows open
+18:33:45.826  perf      last 10 s: 905 ticks, 295 scenes, 295 on screen (copy 295, zero-copy 0, layer copy 0) | render_scene 7.74/20.42 ms | base 0 black kept, 0 presented | acquire 0.20/2.85 ms | present 1.68/16.41 ms (295) | fence wait 4.95/18.15 ms (295, 0 GPU release waits) | release 7.74/56.51 ms (570, 322 held) | 0 pool drops
+18:33:55.827  stats     last 10 s: 267 frames on screen (26.7 fps) | 505 GPU frames from games | 0 window redraws | 1 windows open
+18:33:55.829  perf      last 10 s: 900 ticks, 267 scenes, 267 on screen (copy 267, zero-copy 0, layer copy 0) | render_scene 7.43/23.31 ms | base 0 black kept, 0 presented | acquire 0.25/3.91 ms | present 1.67/15.93 ms (267) | fence wait 4.47/19.01 ms (267, 0 GPU release waits) | release 7.58/51.34 ms (503, 271 held) | 0 pool drops
+18:34:05.837  stats     last 10 s: 260 frames on screen (26.0 fps) | 480 GPU frames from games | 0 window redraws | 1 windows open
+18:34:05.842  perf      last 10 s: 886 ticks, 260 scenes, 260 on screen (copy 260, zero-copy 0, layer copy 0) | render_scene 8.42/31.00 ms | base 0 black kept, 0 presented | acquire 0.21/2.81 ms | present 1.94/21.59 ms (260) | fence wait 5.14/26.12 ms (260, 0 GPU release waits) | release 6.65/45.41 ms (480, 233 held) | 0 pool drops
+18:34:15.842  stats     last 10 s: 270 frames on screen (27.0 fps) | 498 GPU frames from games | 0 window redraws | 1 windows open
+18:34:15.843  perf      last 10 s: 899 ticks, 270 scenes, 270 on screen (copy 270, zero-copy 0, layer copy 0) | render_scene 7.76/24.35 ms | base 0 black kept, 0 presented | acquire 0.21/4.74 ms | present 1.68/16.73 ms (270) | fence wait 4.90/22.80 ms (270, 0 GPU release waits) | release 6.76/39.59 ms (500, 244 held) | 0 pool drops
+18:34:25.844  stats     last 10 s: 273 frames on screen (27.3 fps) | 517 GPU frames from games | 0 window redraws | 1 windows open
+18:34:25.850  perf      last 10 s: 900 ticks, 273 scenes, 273 on screen (copy 273, zero-copy 0, layer copy 0) | render_scene 8.39/25.67 ms | base 0 black kept, 0 presented | acquire 0.29/9.29 ms | present 1.59/11.85 ms (273) | fence wait 5.51/25.12 ms (273, 0 GPU release waits) | release 4.85/28.89 ms (515, 216 held) | 0 pool drops
+18:34:35.851  stats     last 10 s: 366 frames on screen (36.6 fps) | 715 GPU frames from games | 0 window redraws | 1 windows open
+18:34:35.851  perf      last 10 s: 904 ticks, 366 scenes, 366 on screen (copy 366, zero-copy 0, layer copy 0) | render_scene 8.13/31.36 ms | base 0 black kept, 0 presented | acquire 0.21/3.07 ms | present 1.67/11.79 ms (366) | fence wait 5.14/29.58 ms (366, 0 GPU release waits) | release 14.02/61.82 ms (716, 510 held) | 0 pool drops
+18:34:45.864  stats     last 10 s: 364 frames on screen (36.4 fps) | 710 GPU frames from games | 0 window redraws | 1 windows open
+18:34:45.873  perf      last 10 s: 906 ticks, 364 scenes, 364 on screen (copy 364, zero-copy 0, layer copy 0) | render_scene 7.88/17.33 ms | base 0 black kept, 0 presented | acquire 0.26/8.22 ms | present 1.58/9.36 ms (364) | fence wait 5.02/14.04 ms (364, 0 GPU release waits) | release 16.85/59.30 ms (711, 552 held) | 0 pool drops
+18:34:55.874  stats     last 10 s: 347 frames on screen (34.7 fps) | 681 GPU frames from games | 0 window redraws | 1 windows open
+18:34:55.874  perf      last 10 s: 905 ticks, 347 scenes, 347 on screen (copy 347, zero-copy 0, layer copy 0) | render_scene 7.68/19.29 ms | base 0 black kept, 0 presented | acquire 0.22/1.79 ms | present 1.60/11.65 ms (347) | fence wait 4.89/15.90 ms (347, 0 GPU release waits) | release 11.48/52.16 ms (681, 483 held) | 0 pool drops
+18:35:05.874  stats     last 10 s: 133 frames on screen (13.3 fps) | 251 GPU frames from games | 0 window redraws | 1 windows open
+18:35:05.876  perf      last 10 s: 898 ticks, 133 scenes, 133 on screen (copy 133, zero-copy 0, layer copy 0) | render_scene 7.28/20.57 ms | base 0 black kept, 0 presented | acquire 0.26/3.32 ms | present 1.69/10.29 ms (133) | fence wait 4.19/18.27 ms (133, 0 GPU release waits) | release 7.97/40.85 ms (249, 124 held) | 0 pool drops
+18:35:15.878  stats     last 10 s: 323 frames on screen (32.3 fps) | 615 GPU frames from games | 0 window redraws | 1 windows open
+18:35:15.880  perf      last 10 s: 897 ticks, 323 scenes, 323 on screen (copy 323, zero-copy 0, layer copy 0) | render_scene 8.40/30.21 ms | base 0 black kept, 0 presented | acquire 0.26/4.09 ms | present 1.63/9.26 ms (323) | fence wait 5.53/25.59 ms (323, 0 GPU release waits) | release 10.49/61.13 ms (617, 368 held) | 0 pool drops
+18:35:25.881  stats     last 10 s: 340 frames on screen (34.0 fps) | 661 GPU frames from games | 0 window redraws | 1 windows open
+18:35:25.882  perf      last 10 s: 902 ticks, 340 scenes, 340 on screen (copy 340, zero-copy 0, layer copy 0) | render_scene 8.22/22.35 ms | base 0 black kept, 0 presented | acquire 0.24/3.45 ms | present 1.73/10.63 ms (340) | fence wait 5.20/17.30 ms (340, 0 GPU release waits) | release 12.12/66.38 ms (659, 472 held) | 0 pool drops
+18:35:35.882  stats     last 10 s: 342 frames on screen (34.2 fps) | 681 GPU frames from games | 0 window redraws | 1 windows open
+18:35:35.883  perf      last 10 s: 905 ticks, 342 scenes, 342 on screen (copy 342, zero-copy 0, layer copy 0) | render_scene 8.12/28.89 ms | base 0 black kept, 0 presented | acquire 0.24/1.74 ms | present 1.63/27.71 ms (342) | fence wait 5.30/19.11 ms (342, 0 GPU release waits) | release 9.92/48.02 ms (681, 461 held) | 0 pool drops
+18:35:45.884  stats     last 10 s: 338 frames on screen (33.8 fps) | 649 GPU frames from games | 0 window redraws | 1 windows open
+18:35:45.884  perf      last 10 s: 906 ticks, 338 scenes, 338 on screen (copy 338, zero-copy 0, layer copy 0) | render_scene 8.25/18.51 ms | base 0 black kept, 0 presented | acquire 0.26/3.95 ms | present 1.79/11.27 ms (338) | fence wait 5.18/15.24 ms (338, 0 GPU release waits) | release 13.09/59.66 ms (651, 454 held) | 0 pool drops
+18:35:55.885  stats     last 10 s: 341 frames on screen (34.1 fps) | 663 GPU frames from games | 0 window redraws | 1 windows open
+18:35:55.887  perf      last 10 s: 899 ticks, 341 scenes, 341 on screen (copy 341, zero-copy 0, layer copy 0) | render_scene 8.48/23.62 ms | base 0 black kept, 0 presented | acquire 0.24/2.31 ms | present 1.62/16.71 ms (341) | fence wait 5.57/22.74 ms (341, 0 GPU release waits) | release 13.11/53.06 ms (660, 474 held) | 0 pool drops
+18:36:05.892  stats     last 10 s: 383 frames on screen (38.3 fps) | 751 GPU frames from games | 0 window redraws | 1 windows open
+18:36:05.893  perf      last 10 s: 903 ticks, 383 scenes, 383 on screen (copy 383, zero-copy 0, layer copy 0) | render_scene 8.80/19.88 ms | base 0 black kept, 0 presented | acquire 0.22/2.20 ms | present 1.71/10.82 ms (383) | fence wait 5.80/17.86 ms (383, 0 GPU release waits) | release 16.65/61.08 ms (752, 624 held) | 0 pool drops
+18:36:15.898  stats     last 10 s: 359 frames on screen (35.9 fps) | 707 GPU frames from games | 0 window redraws | 1 windows open
+18:36:15.901  perf      last 10 s: 903 ticks, 359 scenes, 359 on screen (copy 359, zero-copy 0, layer copy 0) | render_scene 8.66/24.77 ms | base 0 black kept, 0 presented | acquire 0.27/5.50 ms | present 1.68/11.91 ms (359) | fence wait 5.60/20.95 ms (359, 0 GPU release waits) | release 13.88/61.25 ms (708, 525 held) | 0 pool drops
+18:36:25.901  stats     last 10 s: 358 frames on screen (35.8 fps) | 714 GPU frames from games | 0 window redraws | 1 windows open
+18:36:25.901  perf      last 10 s: 900 ticks, 358 scenes, 358 on screen (copy 358, zero-copy 0, layer copy 0) | render_scene 9.01/21.53 ms | base 0 black kept, 0 presented | acquire 0.25/4.10 ms | present 1.66/7.19 ms (358) | fence wait 6.04/18.44 ms (358, 0 GPU release waits) | release 15.99/59.47 ms (715, 554 held) | 0 pool drops
+18:36:35.902  stats     last 10 s: 296 frames on screen (29.6 fps) | 573 GPU frames from games | 0 window redraws | 1 windows open
+18:36:35.904  perf      last 10 s: 901 ticks, 296 scenes, 296 on screen (copy 296, zero-copy 0, layer copy 0) | render_scene 9.30/23.00 ms | base 0 black kept, 0 presented | acquire 0.22/1.45 ms | present 1.77/14.94 ms (296) | fence wait 6.17/22.14 ms (296, 0 GPU release waits) | release 9.46/61.82 ms (572, 333 held) | 0 pool drops
+18:36:45.905  stats     last 10 s: 225 frames on screen (22.5 fps) | 442 GPU frames from games | 0 window redraws | 1 windows open
+18:36:45.907  perf      last 10 s: 902 ticks, 225 scenes, 225 on screen (copy 225, zero-copy 0, layer copy 0) | render_scene 7.85/25.86 ms | base 0 black kept, 0 presented | acquire 0.32/19.18 ms | present 1.64/13.93 ms (225) | fence wait 4.83/15.66 ms (225, 0 GPU release waits) | release 17.43/58.47 ms (441, 340 held) | 0 pool drops
+18:36:55.908  stats     last 10 s: 355 frames on screen (35.5 fps) | 696 GPU frames from games | 0 window redraws | 1 windows open
+18:36:55.908  perf      last 10 s: 904 ticks, 355 scenes, 355 on screen (copy 355, zero-copy 0, layer copy 0) | render_scene 7.47/20.37 ms | base 0 black kept, 0 presented | acquire 0.21/1.90 ms | present 1.73/10.00 ms (355) | fence wait 4.54/18.99 ms (355, 0 GPU release waits) | release 14.14/56.29 ms (697, 514 held) | 0 pool drops
+18:37:05.909  stats     last 10 s: 238 frames on screen (23.8 fps) | 458 GPU frames from games | 0 window redraws | 1 windows open
+18:37:05.911  perf      last 10 s: 904 ticks, 238 scenes, 238 on screen (copy 238, zero-copy 0, layer copy 0) | render_scene 6.89/28.56 ms | base 0 black kept, 0 presented | acquire 0.18/1.93 ms | present 1.40/7.35 ms (238) | fence wait 4.13/15.28 ms (238, 0 GPU release waits) | release 8.91/52.90 ms (459, 255 held) | 0 pool drops
+18:37:14.659  touch     "Eastward" (gamescope) gets touch
+18:37:15.918  stats     last 10 s: 316 frames on screen (31.6 fps) | 618 GPU frames from games | 0 window redraws | 1 windows open
+18:37:15.919  perf      last 10 s: 892 ticks, 316 scenes, 316 on screen (copy 316, zero-copy 0, layer copy 0) | render_scene 8.25/33.58 ms | base 0 black kept, 0 presented | acquire 0.26/3.49 ms | present 1.49/9.30 ms (316) | fence wait 5.48/30.98 ms (316, 0 GPU release waits) | release 14.30/59.33 ms (618, 441 held) | 0 pool drops
+18:37:25.920  stats     last 10 s: 54 frames on screen (5.4 fps) | 102 GPU frames from games | 0 window redraws | 1 windows open
+18:37:25.921  perf      last 10 s: 906 ticks, 54 scenes, 54 on screen (copy 54, zero-copy 0, layer copy 0) | render_scene 6.77/16.16 ms | base 0 black kept, 0 presented | acquire 0.20/2.23 ms | present 1.57/6.20 ms (54) | fence wait 4.01/11.62 ms (54, 0 GPU release waits) | release 10.84/43.46 ms (102, 71 held) | 0 pool drops
+18:37:31.749  touch     "Eastward" (gamescope) gets touch
+18:37:35.890  gpu       screen surface gone: presenting paused
+18:37:35.921  stats     last 10 s: 291 frames on screen (29.1 fps) | 573 GPU frames from games | 0 window redraws | 1 windows open
+18:37:35.921  perf      last 10 s: 851 ticks, 292 scenes, 291 on screen (copy 291, zero-copy 0, layer copy 0) | render_scene 9.00/83.39 ms | base 0 black kept, 0 presented | acquire 0.27/8.88 ms | present 1.75/16.68 ms (291) | fence wait 5.94/81.00 ms (291, 0 GPU release waits) | release 11.20/59.50 ms (573, 374 held) | 0 pool drops
+18:37:38.923  window    renamed "Eastward" (gamescope) -> "Steam Big Picture Mode" (gamescope)
+18:37:38.925  pointer   unlocked: "Steam Big Picture Mode" (gamescope) (released by the program), pointer at 0,0
+18:37:38.925  pointer   relative pointer released by gamescope
+18:37:38.925  pointer   relative pointer released by gamescope
+18:37:38.925  vulkan    "Steam Big Picture Mode" (gamescope) changed its frame size: 24x24 -> 1280x720
+18:37:45.354  window    closed "Steam Big Picture Mode" (gamescope)
+18:37:45.362  desktop   no desktop: showing 1920x1080 (largest window)
+18:37:45.921  stats     last 10 s: 0 frames on screen (0.0 fps) | 446 GPU frames from games | 0 window redraws | 0 windows open
+18:37:45.922  perf      last 10 s: 0 ticks, 246 scenes, 0 on screen (copy 0, zero-copy 0, layer copy 0) | render_scene 0.15/3.87 ms | base 0 black kept, 0 presented | acquire 0.00/0.00 ms | present 0.00/0.00 ms (0) | fence wait 0.00/0.00 ms (0, 0 GPU release waits) | release 2.59/17.06 ms (448, 300 held) | 0 pool drops
+18:37:48.468  program   disconnected: gamescope (pid 16757)
+18:37:48.470  program   disconnected: gamescope (pid 16757)
+18:37:55.924  perf      last 10 s: 0 ticks, 3 scenes, 0 on screen (copy 0, zero-copy 0, layer copy 0) | render_scene 0.17/0.47 ms | base 0 black kept, 0 presented | acquire 0.00/0.00 ms | present 0.00/0.00 ms (0) | fence wait 0.00/0.00 ms (0, 0 GPU release waits) | release 0.00/0.00 ms (0, 0 held) | 0 pool drops

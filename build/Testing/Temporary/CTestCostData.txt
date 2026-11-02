@@ -1,0 +1,11 @@
+StatisticsTests 74 0.000218019
+WaylandParserTest 68 0.000225874
+WaylandLogParserTest 55 0.00130703
+StutterAnalyzerTests 55 0.000310444
+DiagnosticEngineTests 28 0.000602114
+BaselineComparisonTests 15 0.00119371
+CorrelationAnalyzerTests 12 0.00126339
+HypothesisEngineTests 8 0.00196517
+RecommendationEngineTests 5 0.00277372
+ReportGeneratorTests 3 0.0086768
+---
